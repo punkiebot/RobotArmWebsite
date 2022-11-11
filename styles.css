@@ -1,0 +1,110 @@
+
+@import url(//fonts.googleapis.com/css?family=Ubuntu|Open+Sans:500&subset=latin,latin-ext);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#left-panel{
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    background-color: #2c3e50;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+#left-panel img{
+    
+    width: 150px;
+    height: 150px;   
+    border-radius: 5px;
+    margin-top: 40%;
+}
+
+#left-panel h1{
+    margin-top: 10%;
+}
+
+#left-panel p{
+    margin: 10%;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+#left-panel h3{
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* incio panel derecho*/
+
+
+ul{
+    margin: 5px;
+}
+ul > li {
+    margin-left: 10px;
+}
+
+a{
+    text-decoration:none;
+    color: white
+}
+
+
+.guis{
+    width: 80%;
+    margin: 10px;
+}
+#right-panel{
+    
+    background-color:  white;
+    width: 70%;
+    height: 100%;
+    color: #2c3e50;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#top{
+    background-color: #979fb7;
+    display: flex;    
+}
+
+#top img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px;
+}
+/*para identar las listas anidadas*/
+.UsedTech{
+    padding-top: 20px;
+}
+#middle{
+    background-color: white;
+    padding: 40px; 
+}
+
+#middle  h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer{
+    background-color: white; 
+    padding: 40px;
+    
+}
+

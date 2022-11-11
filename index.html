@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazo Robotico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="left-panel">
+        <img src="/arm.JPG" alt="brazo robot">
+        <h1>Brazo Robótico</h1>
+        <p>Brazo robótico controlado desde la computadora por puerto USB por comunicación serial con Raspbery Pi Pico
+        </p>
+        <h3><a href="#">Inicio</a></h3>
+        <h3><a href="https://github.com/punkiebot/robotArmGUI">Github</a></h3>
+        <h3><a href="https://www.youtube.com/user/nacaicedoc/videos">Youtube</a></h3>
+        <p>Email: nacaicedoc@gmail.com</p>
+
+        <h3><a href="https://www.arturocaicedo.com/">Mi sitio Web</a></h3>
+
+    </div>
+
+    <div id="right-panel">
+        <div id="top">
+            <img src="/brazoFoto.jpg" alt="brazo robot">
+            <div class="UsedTech">
+                <h3>Tecnologias usadas</h3>
+
+                <ul>
+
+                    <li>Hardware
+                        <ul>
+                            <li>Raspberry Pi Pico</li>
+                            <li>Servomotores MG996R</li>
+                            <li>Servomotores de 35kg</li>
+                            <li>Conversor Usb A Serial RS232 Uart TTL Cp2102</li>
+                        </ul>
+                    </li>
+                    <li>Software
+                        <ul>
+                            <li>Micropython</li>
+                            <li>Python</li>
+                            <li>JSON</li>
+                            <li>NodeJS (Express Framework)</li>
+                            <li>Vanilla Javascript(Javascript, CSS, HTML)</li>
+
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="middle">
+            <h1>Introducción </h1>
+            <p>Brazo robótico controlado por PC, con 6 grados de movimiento, se controla a través de una interfaz
+                grafica
+                desarrollada con JavaScript, HTML y CSS, esta GUI tiene varios botones para ejecutar rutinas ya
+                programadas para cada servomotor, una rutina para todos los motores y un botón para mover el brazo a su
+                posición por defecto, también tienes sliders (deslizadores) para seleccionar el ángulo de giro de cada
+                robot.
+                <br>
+                <br>
+                El control de los servomotores lo hace la placa Raspberry Pi Pico usando el lenguaje MicroPython, esta
+                se comunica por protocolo UART con el computador usando el módulo conversor USB A Serial RS232 UART TTL
+                CP2102.
+                <br>
+                <br>
+                En el computador hay un programa en Python que se comunica con la placa Raspberry Pi usando la
+                biblioteca PySerial, este programa Python continuamente lee un archivo JSON y cuando detecta cambios los
+                envía a la placa.
+                <br>
+                <br>
+                Los cambios efectuados en el archivo JSON los hace un programa del Backend que corre en Node, este
+                programa recibe los comandos de la interfaz grafica y los guarda en el archivo JSON
+            </p>
+            <h1>Video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ss5LwJUumyE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <h1>Descripción</h1>
+
+            <h3 style="margin-top: 5px; margin-bottom: 5px">Interfaz Gráfica </h3>
+            <p>6 barras deslizadoras, una para cada servomotor, 8 botones, 6 de los cuales ejecutan rutinas para cada
+                motor, el séptimo una rutina para todos los motores y el último botón lleva el brazo a su posición por
+                defecto.
+                <br>
+                <br>
+                La imagen de la mitad es una guía para identificar cada servomotor.
+            </p>
+            <img class="guis" src="/gui.JPG" alt="GUI">
+            <h3 style="margin-top: 5px; margin-bottom: 5px">Fuente de poder </h3>
+            <p>Se trabajó con un adaptador de voltaje 12v y 5 amperios, junto con un reductor de voltaje a 6v para
+                alimentar los servomotores.</p>
+            <img class="guis" src="/fuentePoder.jpg" alt="GUI">
+            <p>Conversor USB a Serial</p>
+            <img class="guis" src="/conversorUSBSerial.jpg" alt="GUI">
+            <p>Raspberry Pi Pico</p>
+            <img class="guis" src="/RaspyPico.jpg" alt="GUI">
+            <p>Brazo Robotico</p>
+            <img class="guis" src="/brazoFoto2.jpg" alt="GUI">
+
+        </div>
+        <div id="footer">
+            <hr>
+            <br>
+            <p>© - Arturo Caicedo - 2022</p>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
